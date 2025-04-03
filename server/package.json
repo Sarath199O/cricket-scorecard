@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "nodemon ./server.js localhost 3000"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
