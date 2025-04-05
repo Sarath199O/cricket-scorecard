@@ -1,13 +1,21 @@
 import './App.css';
-import MatchHeader from './components/MatchHeader/MatchHeader';
+import MatchBetween from './components/MatchBetween/MatchBetween';
+import Tabs from './components/Tabs/Tabs';
 
 function App() {
+  const tabs = [
+    {name: 'First Innings', content: 'First Innings Content'},
+    {name: 'Second Innings', content: 'Second Innings Content'}
+  ];
+
   return (
-    <div className="cricket-scorecard">
+    <>
       <div className="header">
-        <MatchHeader teamA="Kenya" teamB="Scotland" />
+        <MatchBetween teamA="Kenya" teamB="Scotland" />
       </div>
-    </div>
+  
+      <Tabs tabs={tabs} />
+    </>
   );
 }
 
